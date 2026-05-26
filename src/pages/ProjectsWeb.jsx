@@ -55,22 +55,36 @@ export default function ProjectsWeb() {
                         key={project.id}
                         className="min-w-full md:min-w-[80vw] flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center flex-shrink-0 group"
                     >
-                        {/* IMAGEN: Reducimos un poco el tamaño para que el texto suba */}
-                        <div className="w-full md:w-[50%] max-w-[600px] aspect-video bg-[#0a0a0c] rounded-lg border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-cyan-500/50 flex-shrink-0">
-                            <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1">
-                                <div className="w-1.5 h-1.5 rounded-full bg-red-500/30" />
-                                <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/30" />
-                                <div className="w-1.5 h-1.5 rounded-full bg-green-500/30" />
+                        {/* IMAGEN: Versión responsiva con truco de Mockup para Mobile */}
+                        <div className="w-full md:w-[50%] max-w-[600px] flex justify-center items-center flex-shrink-0">
+                            {/* VISTA MOBILE (Se muestra solo en celus): Estilo Mockup vertical de teléfono */}
+                            <div className="block md:hidden w-[260px] aspect-[9/16] bg-[#0a0a0c] rounded-[2rem] border-4 border-white/10 overflow-hidden shadow-2xl relative transition-all duration-500 hover:border-cyan-500/50">
+                                {/* Parlante/Cámara del celular simulada */}
+                                <div className="absolute top-2 left-1/2 -translate-x-1/2 w-16 h-3 bg-white/10 rounded-full z-20" />
+
+                                <div className="w-full h-full pt-6 overflow-hidden">
+                                    <img
+                                        src={project.imgMobile || project.img} // Usa la de mobile si existe, si no, usa la común
+                                        alt={`${project.title} Mobile`}
+                                        className={`w-full h-full ${project.imgMobile ? "object-cover" : "object-cover object-top scale-110"} transition-all duration-1000 ease-out`}
+                                    />
+                                </div>
                             </div>
-                            <div className="w-full h-full overflow-hidden">
-                                <img
-                                    src={project.img}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover transition-all duration-1000 ease-out
-             opacity-100 grayscale-0 
-             md:opacity-60 md:grayscale 
-             md:group-hover:opacity-100 md:group-hover:grayscale-0 md:group-hover:scale-105"
-                                />
+
+                            {/* VISTA DESKTOP (Se muestra a partir de tablets/pantallas medianas) */}
+                            <div className="hidden md:block w-full aspect-video bg-[#0a0a0c] rounded-lg border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-cyan-500/50">
+                                <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-500/30" />
+                                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/30" />
+                                    <div className="w-1.5 h-1.5 rounded-full bg-green-500/30" />
+                                </div>
+                                <div className="w-full h-full overflow-hidden">
+                                    <img
+                                        src={project.img}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover transition-all duration-1000 ease-out opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105"
+                                    />
+                                </div>
                             </div>
                         </div>
 

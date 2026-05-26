@@ -41,7 +41,7 @@ export default function Home() {
                     {/* Mobile: Frase + Botón Renovado */}
                     <div className="md:hidden mt-4 space-y-4">
                         <p className="text-xs text-white/40 font-light leading-relaxed italic max-w-[280px]">
-                            "Transformo ideas en experiencias visuales y web."
+                            "Diseño estratégico y código frontend para marcas que necesitan conectar, confiar y vender más."
                         </p>
                         
                         {!isChatOpen && (
