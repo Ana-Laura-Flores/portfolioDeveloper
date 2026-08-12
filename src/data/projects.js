@@ -26,7 +26,11 @@ import moviesProjectsMobile from "../assets/image/moviesProjectsMobile.jpg";
 import vistemeLinda02 from "../assets/image/visteme-linda-colores.jpg";
 import vistemeLinda03 from "../assets/image/visteme-linda-variaciones.jpg";
 import vistemeLinda04 from "../assets/image/visteme-linda-aplicaciones.jpg";
-import vistemeLinda05 from "../assets/image/visteme-linda-aplicaciones-02.jpg"
+import vistemeLinda05 from "../assets/image/visteme-linda-aplicaciones-02.jpg";
+import csainWeb from "../assets/image/portada-csain.jpg";
+import csainMobile from "../assets/image/csain-mobile.jpg";
+import grupoBotoWeb from "../assets/image/portada-grupoboto.jpg";
+import grupoBotoMobile from "../assets/image/grupoBoto-mobile.jpeg"
 
 export const DESIGN_PROJECTS = [
   { 
@@ -87,8 +91,38 @@ export const DESIGN_PROJECTS = [
 ];
 
 export const WEB_PROJECTS = [
-  { 
-    id: 1, 
+  {
+    id: 1,
+
+    title: "Grupo Boto",
+
+    category: "DESARROLLO WEB",
+
+    description: "Diseño y desarrollo de sitio web corporativo para Grupo Boto, empresa especializada en ingeniería HVAC, climatización, ventilación y soluciones térmicas integrales.",
+
+    tech: ["React", "Tailwind CSS", "Vite", "UI/UX Optimization"],
+
+    img: grupoBotoWeb,
+
+    imgMobile: grupoBotoMobile,
+
+    link: "https://grupoboto.com.ar/",
+
+    repo: ""
+},
+  {
+  id: 2,
+  title: "Método CSain",
+  category: "DESARROLLO WEB",
+  description: "Plataforma web oficial para el Método Csain, un sistema de flexibilidad y elongación integrativa creado por Claudia Sain.",
+  tech: ["React", "Tailwind CSS", "Vite", "UI/UX Optimization"], 
+  img: csainWeb, 
+  imgMobile: csainMobile,
+  link: "https://csain.com.ar/",  
+  repo: "" 
+},
+{ 
+    id: 3, 
     title: "Metal Air", 
     tech: ["No-Code Dev", "UX/UI Design", "Web Institucional", "Responsive Design"], 
     description: "Desarrollo web institucional para empresa de climatización industrial. Interfaz limpia y catálogo optimizado en experiencia de usuario (UX) para entornos corporativos B2B.",
@@ -98,7 +132,7 @@ export const WEB_PROJECTS = [
     repo: ""
   },
  { 
-    id: 2, 
+    id: 4, 
     title: "Vísteme Linda", 
     tech: ["E-commerce", "Tienda Nube", "UX/UI Setup", "Responsive Design"], 
     description: "Configuración integral de plataforma e-commerce y optimización de la experiencia de usuario (UX). Integración de pasarelas de pago, sistemas de envío y maquetación visual orientada a maximizar la conversión de ventas online.",
@@ -109,7 +143,7 @@ export const WEB_PROJECTS = [
   },
   { 
     
-    id: 3, 
+    id: 5, 
     title: "Magic Jobs", 
     tech: ["JavaScript", "Tailwind CSS", "Node.js"], 
     description: "Plataforma interactiva para la búsqueda y gestión de ofertas laborales. Arquitectura frontend limpia con foco en la usabilidad, velocidad de carga y diseño responsivo.",
@@ -119,7 +153,7 @@ export const WEB_PROJECTS = [
     repo: "https://github.com/Ana-Laura-Flores/magic-jobs"
   },
   { 
-    id: 4, 
+    id: 6, 
     title: "Movies Projects", 
     tech: ["React.js", "MaterialUI", "REST APIs"], 
     description: "Aplicación web de alto rendimiento que consume la API de TMDB. Optimización de renderizado, filtrado dinámico de datos y experiencia de usuario fluida para el consumo de contenido audiovisual.",
@@ -129,7 +163,7 @@ export const WEB_PROJECTS = [
     repo: "https://github.com/Ana-Laura-Flores/moviesProject"
   },
   { 
-    id: 5, 
+    id: 7, 
     title: "AhorrAdas", 
     tech: ["HTML5", "Tailwind CSS", "JavaScript"], 
     description: "Aplicación web orientada a las finanzas personales para el control estricto de gastos y ganancias. Lógica funcional en JS Vanilla con persistencia de datos.",

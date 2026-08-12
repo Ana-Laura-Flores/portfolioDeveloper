@@ -66,26 +66,27 @@ export default function ProjectsWeb() {
                                     <img
                                         src={project.imgMobile || project.img} // Usa la de mobile si existe, si no, usa la común
                                         alt={`${project.title} Mobile`}
-                                        className={`w-full h-full ${project.imgMobile ? "object-cover" : "object-cover object-top scale-110"} transition-all duration-1000 ease-out`}
+                                        className={`w-full h-full ${project.imgMobile ? "object-contain" : "object-contain object-top scale-110"} transition-all duration-1000 ease-out`}
                                     />
                                 </div>
                             </div>
 
                             {/* VISTA DESKTOP (Se muestra a partir de tablets/pantallas medianas) */}
                             <div className="hidden md:block w-full aspect-video bg-[#0a0a0c] rounded-lg border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-cyan-500/50">
-                                <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-red-500/30" />
-                                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/30" />
-                                    <div className="w-1.5 h-1.5 rounded-full bg-green-500/30" />
-                                </div>
-                                <div className="w-full h-full overflow-hidden">
-                                    <img
-                                        src={project.img}
-                                        alt={project.title}
-                                        className="w-full h-full object-cover transition-all duration-1000 ease-out opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105"
-                                    />
-                                </div>
-                            </div>
+    <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1">
+        <div className="w-1.5 h-1.5 rounded-full bg-red-500/30" />
+        <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/30" />
+        <div className="w-1.5 h-1.5 rounded-full bg-green-500/30" />
+    </div>
+
+    <div className="w-full h-[calc(100%-1.5rem)] overflow-hidden flex items-center justify-center bg-[#0a0a0c]">
+        <img
+            src={project.img}
+            alt={project.title}
+            className="w-full h-full object-contain transition-all duration-1000 ease-out opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0"
+        />
+    </div>
+</div>
                         </div>
 
                         {/* INFO TÉCNICA: Ajustada para que quepa todo */}
