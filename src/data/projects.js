@@ -32,20 +32,34 @@ import csainMobile from "../assets/image/csain-mobile.jpg";
 import grupoBotoWeb from "../assets/image/portada-grupoboto.jpg";
 import grupoBotoMobile from "../assets/image/grupoBoto-mobile.jpeg";
 import grupoBotoPdf from "../assets/image/grupoBoto-presentacion.png";
-import grupoBotoPdf2 from "../assets/image/grupoBoto-presentacion02.png"
+import grupoBotoPdf2 from "../assets/image/grupoBoto-presentacion02.png";
+import atemporal from "../assets/image/atemporal.png";
+import atemporal02 from "../assets/image/atemporal02.png";
+import atemporal03 from "../assets/image/atemporal04.png";
+import atemporal04 from "../assets/image/atemporal03.png";
+import atemporal05 from "../assets/image/atemporal05.jpg"
 
 export const DESIGN_PROJECTS = [
   { 
     id: 1, 
     title: "Ventek", 
     category: "Branding & Identidad", 
-    color: "from-cyan-500", 
+    color: "from-fuchsia-500", 
     description: "Desarrollo de identidad visual y manual de marca para distribución. Creación de paleta cromática estratégica unificada para empaques, gráfica vehicular y canales digitales.",
     img: ventekPortada, 
     gallery: [ventekPortada, ventekPaleta, ventekMockup, ventekPost] 
   },
+  {
+    id: 2,
+    title: "ATEMPORAL",
+    category: "Diseño Gráfico & Editorial",
+    color: "from-fuchsia-500",
+    description: "Diseño y desarrollo de piezas gráficas para la muestra ATEMPORAL de Willi Rommel. Una propuesta visual orientada a construir una identidad coherente para la exhibición y comunicar su concepto a través de diferentes soportes.",
+    img: atemporal,
+    gallery: [atemporal, atemporal02, atemporal03, atemporal04, atemporal05]
+},
   { 
-    id: 2, 
+    id: 3, 
     title: "Visteme Linda", 
     category: "Branding & Logo", 
     color: "from-fuchsia-500", 
@@ -55,16 +69,16 @@ export const DESIGN_PROJECTS = [
   
   },
   { 
-    id: 3, 
+    id: 4, 
     title: "Grupo Boto", 
     category: "Diseño de Presentación en pdf", 
-    color: "from-purple-500", 
+    color: "from-fuchsia-500", 
     description: "Diseño estratégico de presentación digital corporativo de alta gama. Estructuración visual limpia orientada a facilitar la venta técnica B2B.",
     img: grupoBotoPdf,
     gallery: [grupoBotoPdf, grupoBotoPdf2],
   },
   { 
-    id: 4, 
+    id: 5, 
     title: "Nobles & Cía", 
     category: "Branding & Identidad", 
     color: "from-fuchsia-500", 
@@ -75,7 +89,7 @@ export const DESIGN_PROJECTS = [
   },
   
   { 
-    id: 5, 
+    id: 6, 
     title: "Phantro Vision", 
     category: "Branding & Identidad", 
     color: "from-purple-500", 
@@ -84,7 +98,7 @@ export const DESIGN_PROJECTS = [
     gallery: [phantro02, phantro, phantro03, phantro04],
   },
   { 
-    id: 6, 
+    id: 7, 
     title: "Innova Vision", 
     category: "Diseño Editorial & Catálogo", 
     color: "from-purple-500", 
@@ -93,7 +107,7 @@ export const DESIGN_PROJECTS = [
     gallery: [innova01, innova02],
   },
   { 
-    id: 7, 
+    id: 8 , 
     title: "Logimol", 
     category: "UI/UX Design", 
     color: "from-purple-500", 
