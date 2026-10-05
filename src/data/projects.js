@@ -30,7 +30,9 @@ import vistemeLinda05 from "../assets/image/visteme-linda-aplicaciones-02.jpg";
 import csainWeb from "../assets/image/portada-csain.jpg";
 import csainMobile from "../assets/image/csain-mobile.jpg";
 import grupoBotoWeb from "../assets/image/portada-grupoboto.jpg";
-import grupoBotoMobile from "../assets/image/grupoBoto-mobile.jpeg"
+import grupoBotoMobile from "../assets/image/grupoBoto-mobile.jpeg";
+import grupoBotoPdf from "../assets/image/grupoBoto-presentacion.png";
+import grupoBotoPdf2 from "../assets/image/grupoBoto-presentacion02.png"
 
 export const DESIGN_PROJECTS = [
   { 
@@ -54,6 +56,15 @@ export const DESIGN_PROJECTS = [
   },
   { 
     id: 3, 
+    title: "Grupo Boto", 
+    category: "Diseño de Presentación en pdf", 
+    color: "from-purple-500", 
+    description: "Diseño estratégico de presentación digital corporativo de alta gama. Estructuración visual limpia orientada a facilitar la venta técnica B2B.",
+    img: grupoBotoPdf,
+    gallery: [grupoBotoPdf, grupoBotoPdf2],
+  },
+  { 
+    id: 4, 
     title: "Nobles & Cía", 
     category: "Branding & Identidad", 
     color: "from-fuchsia-500", 
@@ -62,14 +73,7 @@ export const DESIGN_PROJECTS = [
     imgMobile: nobles,
     gallery: [nobles, nobles02],
   },
-  { 
-    id: 4, 
-    title: "Logimol", 
-    category: "UI/UX Design", 
-    color: "from-purple-500", 
-    description: "Arquitectura de información, diseño de interfaz (UI) y desarrollo de sistemas de color optimizados para garantizar una navegación fluida, intuitiva y profesional.",
-    img: logimol
-  },
+  
   { 
     id: 5, 
     title: "Phantro Vision", 
@@ -87,6 +91,14 @@ export const DESIGN_PROJECTS = [
     description: "Diseño estratégico de catálogo digital corporativo de alta gama para instrumental óptico y de laboratorio. Estructuración visual limpia orientada a facilitar la venta técnica B2B.",
     img: innova01,
     gallery: [innova01, innova02],
+  },
+  { 
+    id: 7, 
+    title: "Logimol", 
+    category: "UI/UX Design", 
+    color: "from-purple-500", 
+    description: "Arquitectura de información, diseño de interfaz (UI) y desarrollo de sistemas de color optimizados para garantizar una navegación fluida, intuitiva y profesional.",
+    img: logimol
   },
 ];
 
