@@ -37,11 +37,25 @@ import atemporal from "../assets/image/atemporal.png";
 import atemporal02 from "../assets/image/atemporal02.png";
 import atemporal03 from "../assets/image/atemporal04.png";
 import atemporal04 from "../assets/image/atemporal03.png";
-import atemporal05 from "../assets/image/atemporal05.jpg"
+import atemporal05 from "../assets/image/atemporal05.jpg";
+import baiPortada from "../assets/image/bai-portada.jpg";
+import baiLogo from "../assets/image/bai-paleta.jpg";
+import baiMetal from "../assets/image/bai-metal.jpg"
+import baiAplicaciones from "../assets/image/bai-aplicaciones.jpg";
+import baiRedes from "../assets/image/bai-historias.jpg"
 
 export const DESIGN_PROJECTS = [
+  {
+  id: 1,
+  title: "BAI Repujado",
+  category: "Branding & Identidad",
+  color: "from-fuchsia-500",
+  description: "Desarrollo de identidad visual para una empresa dedicada al repujado y mecanizado de piezas. Diseño de marca, definición de paleta cromática y sistema visual con aplicaciones para comunicación institucional y entornos industriales.",
+  img: baiPortada,
+  gallery: [baiPortada, baiLogo, baiMetal, baiAplicaciones, baiRedes]
+},
   { 
-    id: 1, 
+    id: 2, 
     title: "Ventek", 
     category: "Branding & Identidad", 
     color: "from-fuchsia-500", 
@@ -50,7 +64,7 @@ export const DESIGN_PROJECTS = [
     gallery: [ventekPortada, ventekPaleta, ventekMockup, ventekPost] 
   },
   {
-    id: 2,
+    id: 3,
     title: "ATEMPORAL",
     category: "Diseño Gráfico & Editorial",
     color: "from-fuchsia-500",
@@ -59,7 +73,7 @@ export const DESIGN_PROJECTS = [
     gallery: [atemporal, atemporal02, atemporal03, atemporal04, atemporal05]
 },
   { 
-    id: 3, 
+    id: 4, 
     title: "Visteme Linda", 
     category: "Branding & Logo", 
     color: "from-fuchsia-500", 
@@ -69,7 +83,7 @@ export const DESIGN_PROJECTS = [
   
   },
   { 
-    id: 4, 
+    id: 5, 
     title: "Grupo Boto", 
     category: "Diseño de Presentación en pdf", 
     color: "from-fuchsia-500", 
@@ -78,7 +92,7 @@ export const DESIGN_PROJECTS = [
     gallery: [grupoBotoPdf, grupoBotoPdf2],
   },
   { 
-    id: 5, 
+    id: 6, 
     title: "Nobles & Cía", 
     category: "Branding & Identidad", 
     color: "from-fuchsia-500", 
@@ -89,7 +103,7 @@ export const DESIGN_PROJECTS = [
   },
   
   { 
-    id: 6, 
+    id: 7, 
     title: "Phantro Vision", 
     category: "Branding & Identidad", 
     color: "from-purple-500", 
@@ -98,7 +112,7 @@ export const DESIGN_PROJECTS = [
     gallery: [phantro02, phantro, phantro03, phantro04],
   },
   { 
-    id: 7, 
+    id: 8, 
     title: "Innova Vision", 
     category: "Diseño Editorial & Catálogo", 
     color: "from-purple-500", 
@@ -107,7 +121,7 @@ export const DESIGN_PROJECTS = [
     gallery: [innova01, innova02],
   },
   { 
-    id: 8 , 
+    id: 9 , 
     title: "Logimol", 
     category: "UI/UX Design", 
     color: "from-purple-500", 
